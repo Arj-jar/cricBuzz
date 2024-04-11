@@ -14,6 +14,7 @@ def getScore():
         })
     print("-------------")
     if league_tab:
+        print("inside----",league_tab)
         match_id=league_tab.find('h3',{
             'class' : 'cb-lv-scr-mtch-hdr'
         }).find('a')['href'].split('/')[2]
